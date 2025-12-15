@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig>
   <Tracking>
+    <ImageTarget name="tanaman_jagung" size="1.000000 1.414677" />
     <ImageTarget name="target_padi" size="1.000000 1.415146" />
   </Tracking>
 </QCARConfig>

@@ -1,49 +1,49 @@
 using UnityEngine;
 using System.Collections;
 
-public class JagungCycleObjects : MonoBehaviour
+public class JagungGrowthStageController : MonoBehaviour
 {
-    public GameObject[] objects; // isi 4 object di inspector
-    private int index = 0;
-    private bool isCycling = false; // mencegah spam klik
+    public GameObject[] growthStages; // Tahap pertumbuhan jagung yang akan ditampilkan
+    private int currentStageIndex = 0;
+    private bool isTransitioning = false; // Cegah multiple clicks selama transisi
 
     void Start()
     {
-        // Matikan semua object dulu
-        foreach (GameObject obj in objects)
-            obj.SetActive(false);
+        // Sembunyikan semua tahap pertumbuhan
+        foreach (GameObject stage in growthStages)
+            stage.SetActive(false);
 
-        // Tampilkan object pertama
-        if (objects.Length > 0)
-            objects[0].SetActive(true);
+        // Tampilkan tahap pertumbuhan awal
+        if (growthStages.Length > 0)
+            growthStages[0].SetActive(true);
     }
 
-    // Fungsi dipanggil ketika tombol ditekan
-    public void NextObject()
+    // Dipanggil ketika tombol untuk menampilkan tahap berikutnya ditekan
+    public void ShowNextGrowthStage()
     {
-        // Cegah tombol ditekan saat masih delay
-        if (!isCycling)
+        // Hindari input selama tahap transisi sedang berlangsung
+        if (!isTransitioning)
         {
-            StartCoroutine(CycleWithDelay());
+            StartCoroutine(ProgressToNextStageWithDelay());
         }
     }
 
-    IEnumerator CycleWithDelay()
+    IEnumerator ProgressToNextStageWithDelay()
     {
-        isCycling = true;
+        isTransitioning = true;
 
-        // Delay 3 detik
+        // Tunggu sebelum menunjukkan tahap berikutnya
         yield return new WaitForSeconds(2f);
 
-        // Sembunyikan object saat ini
-        objects[index].SetActive(false);
+        // Sembunyikan tahap pertumbuhan yang sedang ditampilkan
+        growthStages[currentStageIndex].SetActive(false);
 
-        // Geser ke object berikutnya
-        index = (index + 1) % objects.Length;
+        // Pindah ke indeks tahap berikutnya
+        currentStageIndex = (currentStageIndex + 1) % growthStages.Length;
 
-        // Tampilkan object baru
-        objects[index].SetActive(true);
+        // Tampilkan tahap pertumbuhan baru
+        growthStages[currentStageIndex].SetActive(true);
 
-        isCycling = false;
+        isTransitioning = false;
     }
 }

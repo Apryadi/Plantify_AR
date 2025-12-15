@@ -184,7 +184,7 @@ struct IScrollHandler_t762CB73017D561E11CF6759ED9FD8C9F24B3D13F;
 struct ITextPreprocessor_tDBB49C8B68D7B80E8D233B9D9666C43981EFAAB9;
 struct Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E;
 struct InvokableCallList_t309E1C8C7CE885A0D2F98C84CEA77A8935688382;
-struct JagungCycleObjects_t45A23C550C263DA29C597505BE06CD22BB7DC346;
+struct JagungGrowthStageController_tB24E17EF1C603B150D59EE6DB3D33417C7A5DAD1;
 struct KerningTable_t040C3FE3B519B12AADE1C5B00628581551D5AB6B;
 struct LayoutElement_tB1F24CC11AF4AA87015C8D8EE06D22349C5BF40A;
 struct LayoutGroup_t32417833C700E77EDFA7C20034DAFD26604E05CE;
@@ -279,7 +279,7 @@ struct WillRenderCanvases_tA4A6E66DBA797DCB45B995DBA449A9D1D80D0FBC;
 struct U3CCycleWithDelayU3Ed__5_t98302D52408B1B1C180A0F00A82E39E2241D9312;
 struct U3CStartU3Ed__4_t7AF0F1ABA8D3AE9575A02603D2DC2137FA816557;
 struct FontTextureRebuildCallback_t76D5E172DF8AA57E67763D453AAC40F0961D09B1;
-struct U3CCycleWithDelayU3Ed__5_tD185EE5085CD73D48F958C29D3E7993DDB1899AA;
+struct U3CProgressToNextStageWithDelayU3Ed__5_t30469E4055AE3766F94D69AB4AD51963B4BFA913;
 struct CullStateChangedEvent_t6073CD0D951EC1256BF74B8F9107D68FC89B99B8;
 struct Section_t50C894D0A717C2368EBAAE5477D4E8626D0B5401;
 struct ReapplyDrivenProperties_t3482EA130A01FF7EE2EEFE37F66A5215D08CFE24;
@@ -347,9 +347,9 @@ IL2CPP_EXTERN_C RuntimeClass* U3CAnimateVertexColorsU3Ed__11_t2EF4BA1F3569F2C4EC
 IL2CPP_EXTERN_C RuntimeClass* U3CAnimateVertexColorsU3Ed__3_t88CF335125784EBBA1DA65AF7B815F1814D31264_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3CCooldownU3Ed__4_t2ED0EF59A37F06A6793C89F74B94C4AA98EE5F0C_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3CCycleWithDelayU3Ed__5_t98302D52408B1B1C180A0F00A82E39E2241D9312_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeClass* U3CCycleWithDelayU3Ed__5_tD185EE5085CD73D48F958C29D3E7993DDB1899AA_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3CDisplayTextMeshFloatingTextU3Ed__16_t5CBD7868EB4D3D561D539B99B4541CC014DFF5F0_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3CDisplayTextMeshProFloatingTextU3Ed__15_tDFD30981C9C1189D2AC3AA6C07DA7EFE7E1694F3_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* U3CProgressToNextStageWithDelayU3Ed__5_t30469E4055AE3766F94D69AB4AD51963B4BFA913_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3CRevealCharactersU3Ed__7_tB14F85C7FC57BEFD555A1A9CD8D3FF41E0F676F9_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3CRevealWordsU3Ed__8_t912CFD430C602C79AE6BC1BC6C4AEBF101B4D7C8_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3CSequenceU3Ed__6_t8AA4BD7F762606D431933D1CCCD9DE9930B4DF82_il2cpp_TypeInfo_var;
@@ -370,7 +370,7 @@ IL2CPP_EXTERN_C RuntimeClass* WaitForEndOfFrame_tE38D80923E3F8380069B423968C25AB
 IL2CPP_EXTERN_C RuntimeClass* WaitForSecondsU5BU5D_t2A9038ECB6E643745AEF2AD9A4F7FFD3D272186E_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* WordSelectionEvent_t340E6006406B5E90F7190C56218E8F7E3712945E_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____5CF5F273518F0EE8527AAE4A59EF3ABFB53F4C70C1356C7FB33E23C1D5C98A21_FieldInfo_var;
+IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____20829D8A9B29C46ECACDAAA776B1DB8681840339CAFECABD1360AAC04E027524_FieldInfo_var;
 IL2CPP_EXTERN_C RuntimeField* U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____AE12FB2488A2CD22AD73510F39F7B47E68DA49C0E090A87389EFE5EC0B9F54E1_FieldInfo_var;
 IL2CPP_EXTERN_C String_t* _stringLiteral000A577FA6F1044FCB37680E918D59D0DA3E7DDA;
 IL2CPP_EXTERN_C String_t* _stringLiteral00B28FF06B788B9B67C6B259800F404F9F3761FD;
@@ -479,10 +479,10 @@ IL2CPP_EXTERN_C const RuntimeMethod* U3CAnimateVertexColorsU3Ed__11_System_Colle
 IL2CPP_EXTERN_C const RuntimeMethod* U3CAnimateVertexColorsU3Ed__11_System_Collections_IEnumerator_Reset_m2F84864A089CBA0B878B7AC1EA39A49B82682A90_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CAnimateVertexColorsU3Ed__3_System_Collections_IEnumerator_Reset_m319AC50F2DE1572FB7D7AF4F5F65958D01477899_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CCooldownU3Ed__4_System_Collections_IEnumerator_Reset_m5BFA7B00FB029270445FE67C6D143BAAA91EEC16_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* U3CCycleWithDelayU3Ed__5_System_Collections_IEnumerator_Reset_m71A0D3267593BD82BAE50755C67E9D42B850EA67_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CCycleWithDelayU3Ed__5_System_Collections_IEnumerator_Reset_mBC8DC0F0F247CAFC8741DCF146285CABD4752599_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CDisplayTextMeshFloatingTextU3Ed__16_System_Collections_IEnumerator_Reset_m5A7148435B35A0A84329416FF765D45F6AA0F4E1_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CDisplayTextMeshProFloatingTextU3Ed__15_System_Collections_IEnumerator_Reset_mCCE19093B7355F3E23834E27A8517661DF833797_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* U3CProgressToNextStageWithDelayU3Ed__5_System_Collections_IEnumerator_Reset_m4779A1FB63B5F8CDBF4E263724CE30B7764846DF_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CRevealCharactersU3Ed__7_System_Collections_IEnumerator_Reset_mD12057609EFCBCA8E7B61B0421D4A7C5A206C8C3_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CRevealWordsU3Ed__8_System_Collections_IEnumerator_Reset_mE5E0678716735BDF0D632FE43E392981E75A1C4D_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CSequenceU3Ed__6_System_Collections_IEnumerator_Reset_m2AC2DBE9D3D496D435B0301B25D60759A41190C8_RuntimeMethod_var;
@@ -655,11 +655,11 @@ struct U3CCycleWithDelayU3Ed__5_t98302D52408B1B1C180A0F00A82E39E2241D9312  : pub
 	RuntimeObject* ___U3CU3E2__current;
 	CycleObjects_t8D85D5CA1BBE03E7D3AEC90CB874639820DE0FD5* ___U3CU3E4__this;
 };
-struct U3CCycleWithDelayU3Ed__5_tD185EE5085CD73D48F958C29D3E7993DDB1899AA  : public RuntimeObject
+struct U3CProgressToNextStageWithDelayU3Ed__5_t30469E4055AE3766F94D69AB4AD51963B4BFA913  : public RuntimeObject
 {
 	int32_t ___U3CU3E1__state;
 	RuntimeObject* ___U3CU3E2__current;
-	JagungCycleObjects_t45A23C550C263DA29C597505BE06CD22BB7DC346* ___U3CU3E4__this;
+	JagungGrowthStageController_tB24E17EF1C603B150D59EE6DB3D33417C7A5DAD1* ___U3CU3E4__this;
 };
 struct Section_t50C894D0A717C2368EBAAE5477D4E8626D0B5401  : public RuntimeObject
 {
@@ -2710,11 +2710,11 @@ struct EnvMapAnimator_tFBDB01D5863979E446E8FF4A3A9C1EA6933D38DB  : public MonoBe
 	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* ___m_textMeshPro;
 	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___m_material;
 };
-struct JagungCycleObjects_t45A23C550C263DA29C597505BE06CD22BB7DC346  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+struct JagungGrowthStageController_tB24E17EF1C603B150D59EE6DB3D33417C7A5DAD1  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
-	GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* ___objects;
-	int32_t ___index;
-	bool ___isCycling;
+	GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* ___growthStages;
+	int32_t ___currentStageIndex;
+	bool ___isTransitioning;
 };
 struct ObjectSpin_tE4A801A6C63FE0773DE2FD043571CB80CC9F194B  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
@@ -4422,8 +4422,8 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool Selectable_get_interactable_
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* UIButtonCooldown_Cooldown_m56DADE856FAB50412FFCEA69B3D9F0CA904E4E42 (UIButtonCooldown_tD2DDDFA4A4B8C9404378C7D13D50EEBED1A994C2* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CCooldownU3Ed__4__ctor_m7AF1EF008479C11DB0AD1B1CECCDDB34C50841B5 (U3CCooldownU3Ed__4_t2ED0EF59A37F06A6793C89F74B94C4AA98EE5F0C* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Selectable_set_interactable_m8DD581C1AD99B2EFA8B3EE9AF69EDDF26688B492 (Selectable_t3251808068A17B8E92FB33590A4C2FA66D456712* __this, bool ___0_value, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* JagungCycleObjects_CycleWithDelay_m470BA6D259927DE3EB14693C109D01EEB330AD3E (JagungCycleObjects_t45A23C550C263DA29C597505BE06CD22BB7DC346* __this, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CCycleWithDelayU3Ed__5__ctor_m7E0595BA09786349151212BD3F61071904017E04 (U3CCycleWithDelayU3Ed__5_tD185EE5085CD73D48F958C29D3E7993DDB1899AA* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* JagungGrowthStageController_ProgressToNextStageWithDelay_mB51E543235A90577BD42C0F151C53C5BA4DE85CF (JagungGrowthStageController_tB24E17EF1C603B150D59EE6DB3D33417C7A5DAD1* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CProgressToNextStageWithDelayU3Ed__5__ctor_m42DCC3920C025FFF42E9846B6DE1E59C88E02B50 (U3CProgressToNextStageWithDelayU3Ed__5_t30469E4055AE3766F94D69AB4AD51963B4BFA913* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* UIButtonShowPlayHide_Sequence_m796728C897E558120A47BC4B107E44B89C873639 (UIButtonShowPlayHide_t6974B0ABBCBB2F4C6F85FF45E743C9E58B5F5650* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CSequenceU3Ed__6__ctor_m72A70731671F2EDDFFD2BF66B84073177AD5A0D9 (U3CSequenceU3Ed__6_t8AA4BD7F762606D431933D1CCCD9DE9930B4DF82* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Animator_SetTrigger_mC9CD54D627C8843EF6E159E167449D216EF6EB30 (Animator_t8A52E42AE54F76681838FE9E632683EF3952E883* __this, String_t* ___0_name, const RuntimeMethod* method) ;
@@ -5356,13 +5356,13 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CCooldownU3Ed__4_System_Coll
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 // Method Definition Index: 95568
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void JagungCycleObjects_Start_mC6380988175DDD4AF9AA5AEAA422986A310B9D6D (JagungCycleObjects_t45A23C550C263DA29C597505BE06CD22BB7DC346* __this, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void JagungGrowthStageController_Start_m911A4ADE0ABED2BCCF5E468B6C90C6977E102D12 (JagungGrowthStageController_tB24E17EF1C603B150D59EE6DB3D33417C7A5DAD1* __this, const RuntimeMethod* method) 
 {
 	GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* V_0 = NULL;
 	int32_t V_1 = 0;
 	{
 		//<source_info:D:/Unity/unity project/ALP VR/Assets/jagungController.cs:13>
-		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_0 = __this->___objects;
+		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_0 = __this->___growthStages;
 		V_0 = L_0;
 		V_1 = 0;
 		goto IL_0018;
@@ -5396,7 +5396,7 @@ IL_0018:
 	}
 	{
 		//<source_info:D:/Unity/unity project/ALP VR/Assets/jagungController.cs:17>
-		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_8 = __this->___objects;
+		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_8 = __this->___growthStages;
 		NullCheck(L_8);
 		if (!(((RuntimeArray*)L_8)->max_length))
 		{
@@ -5405,7 +5405,7 @@ IL_0018:
 	}
 	{
 		//<source_info:D:/Unity/unity project/ALP VR/Assets/jagungController.cs:18>
-		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_9 = __this->___objects;
+		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_9 = __this->___growthStages;
 		NullCheck(L_9);
 		int32_t L_10 = 0;
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_11 = (L_9)->GetAt(static_cast<il2cpp_array_size_t>(L_10));
@@ -5420,11 +5420,11 @@ IL_0035:
 	}
 }
 // Method Definition Index: 95569
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void JagungCycleObjects_NextObject_m87AB6173B68949C63F37ED149ADB096D13E893A0 (JagungCycleObjects_t45A23C550C263DA29C597505BE06CD22BB7DC346* __this, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void JagungGrowthStageController_ShowNextGrowthStage_m8D26257516644402B224075A60FD402E0E4B66B8 (JagungGrowthStageController_tB24E17EF1C603B150D59EE6DB3D33417C7A5DAD1* __this, const RuntimeMethod* method) 
 {
 	{
 		//<source_info:D:/Unity/unity project/ALP VR/Assets/jagungController.cs:25>
-		bool L_0 = __this->___isCycling;
+		bool L_0 = __this->___isTransitioning;
 		if (L_0)
 		{
 			goto IL_0015;
@@ -5433,7 +5433,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void JagungCycleObjects_NextObject_m87AB6173B
 	{
 		//<source_info:D:/Unity/unity project/ALP VR/Assets/jagungController.cs:27>
 		RuntimeObject* L_1;
-		L_1 = JagungCycleObjects_CycleWithDelay_m470BA6D259927DE3EB14693C109D01EEB330AD3E(__this, NULL);
+		L_1 = JagungGrowthStageController_ProgressToNextStageWithDelay_mB51E543235A90577BD42C0F151C53C5BA4DE85CF(__this, NULL);
 		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_2;
 		L_2 = MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812(__this, L_1, NULL);
 	}
@@ -5445,18 +5445,18 @@ IL_0015:
 	}
 }
 // Method Definition Index: 95570
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* JagungCycleObjects_CycleWithDelay_m470BA6D259927DE3EB14693C109D01EEB330AD3E (JagungCycleObjects_t45A23C550C263DA29C597505BE06CD22BB7DC346* __this, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* JagungGrowthStageController_ProgressToNextStageWithDelay_mB51E543235A90577BD42C0F151C53C5BA4DE85CF (JagungGrowthStageController_tB24E17EF1C603B150D59EE6DB3D33417C7A5DAD1* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CCycleWithDelayU3Ed__5_tD185EE5085CD73D48F958C29D3E7993DDB1899AA_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CProgressToNextStageWithDelayU3Ed__5_t30469E4055AE3766F94D69AB4AD51963B4BFA913_il2cpp_TypeInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		U3CCycleWithDelayU3Ed__5_tD185EE5085CD73D48F958C29D3E7993DDB1899AA* L_0 = (U3CCycleWithDelayU3Ed__5_tD185EE5085CD73D48F958C29D3E7993DDB1899AA*)il2cpp_codegen_object_new(U3CCycleWithDelayU3Ed__5_tD185EE5085CD73D48F958C29D3E7993DDB1899AA_il2cpp_TypeInfo_var);
-		U3CCycleWithDelayU3Ed__5__ctor_m7E0595BA09786349151212BD3F61071904017E04(L_0, 0, NULL);
-		U3CCycleWithDelayU3Ed__5_tD185EE5085CD73D48F958C29D3E7993DDB1899AA* L_1 = L_0;
+		U3CProgressToNextStageWithDelayU3Ed__5_t30469E4055AE3766F94D69AB4AD51963B4BFA913* L_0 = (U3CProgressToNextStageWithDelayU3Ed__5_t30469E4055AE3766F94D69AB4AD51963B4BFA913*)il2cpp_codegen_object_new(U3CProgressToNextStageWithDelayU3Ed__5_t30469E4055AE3766F94D69AB4AD51963B4BFA913_il2cpp_TypeInfo_var);
+		U3CProgressToNextStageWithDelayU3Ed__5__ctor_m42DCC3920C025FFF42E9846B6DE1E59C88E02B50(L_0, 0, NULL);
+		U3CProgressToNextStageWithDelayU3Ed__5_t30469E4055AE3766F94D69AB4AD51963B4BFA913* L_1 = L_0;
 		NullCheck(L_1);
 		L_1->___U3CU3E4__this = __this;
 		Il2CppCodeGenWriteBarrier((void**)(&L_1->___U3CU3E4__this), (void*)__this);
@@ -5464,7 +5464,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* JagungCycleObjects_CycleWithDe
 	}
 }
 // Method Definition Index: 95571
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void JagungCycleObjects__ctor_mD7D8F629C33E6249ABF4AD50797C8F6C949BF55B (JagungCycleObjects_t45A23C550C263DA29C597505BE06CD22BB7DC346* __this, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void JagungGrowthStageController__ctor_mD0204366CAB42E66EF4138877078101F07A91858 (JagungGrowthStageController_tB24E17EF1C603B150D59EE6DB3D33417C7A5DAD1* __this, const RuntimeMethod* method) 
 {
 	{
 		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
@@ -5480,7 +5480,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void JagungCycleObjects__ctor_mD7D8F629C33E62
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
 // Method Definition Index: 95572
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CCycleWithDelayU3Ed__5__ctor_m7E0595BA09786349151212BD3F61071904017E04 (U3CCycleWithDelayU3Ed__5_tD185EE5085CD73D48F958C29D3E7993DDB1899AA* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CProgressToNextStageWithDelayU3Ed__5__ctor_m42DCC3920C025FFF42E9846B6DE1E59C88E02B50 (U3CProgressToNextStageWithDelayU3Ed__5_t30469E4055AE3766F94D69AB4AD51963B4BFA913* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) 
 {
 	{
 		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
@@ -5490,14 +5490,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CCycleWithDelayU3Ed__5__ctor_m7E0595BA
 	}
 }
 // Method Definition Index: 95573
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CCycleWithDelayU3Ed__5_System_IDisposable_Dispose_mB3FC005BD7B81C9B0E29B62AD8AC259F0718793A (U3CCycleWithDelayU3Ed__5_tD185EE5085CD73D48F958C29D3E7993DDB1899AA* __this, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CProgressToNextStageWithDelayU3Ed__5_System_IDisposable_Dispose_m3715AC5668D7C37821626B39743DF915792FB537 (U3CProgressToNextStageWithDelayU3Ed__5_t30469E4055AE3766F94D69AB4AD51963B4BFA913* __this, const RuntimeMethod* method) 
 {
 	{
 		return;
 	}
 }
 // Method Definition Index: 95574
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CCycleWithDelayU3Ed__5_MoveNext_mF3D52AA74EEEF71E5778ACA41D1DE4A86B68DEE3 (U3CCycleWithDelayU3Ed__5_tD185EE5085CD73D48F958C29D3E7993DDB1899AA* __this, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CProgressToNextStageWithDelayU3Ed__5_MoveNext_m2B670DE26002F2FB0D00B0728346F8BF1C76C30A (U3CProgressToNextStageWithDelayU3Ed__5_t30469E4055AE3766F94D69AB4AD51963B4BFA913* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
@@ -5506,11 +5506,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CCycleWithDelayU3Ed__5_MoveNext_mF3D52
 		s_Il2CppMethodInitialized = true;
 	}
 	int32_t V_0 = 0;
-	JagungCycleObjects_t45A23C550C263DA29C597505BE06CD22BB7DC346* V_1 = NULL;
+	JagungGrowthStageController_tB24E17EF1C603B150D59EE6DB3D33417C7A5DAD1* V_1 = NULL;
 	{
 		int32_t L_0 = __this->___U3CU3E1__state;
 		V_0 = L_0;
-		JagungCycleObjects_t45A23C550C263DA29C597505BE06CD22BB7DC346* L_1 = __this->___U3CU3E4__this;
+		JagungGrowthStageController_tB24E17EF1C603B150D59EE6DB3D33417C7A5DAD1* L_1 = __this->___U3CU3E4__this;
 		V_1 = L_1;
 		int32_t L_2 = V_0;
 		if (!L_2)
@@ -5533,9 +5533,9 @@ IL_0017:
 	{
 		__this->___U3CU3E1__state = (-1);
 		//<source_info:D:/Unity/unity project/ALP VR/Assets/jagungController.cs:33>
-		JagungCycleObjects_t45A23C550C263DA29C597505BE06CD22BB7DC346* L_4 = V_1;
+		JagungGrowthStageController_tB24E17EF1C603B150D59EE6DB3D33417C7A5DAD1* L_4 = V_1;
 		NullCheck(L_4);
-		L_4->___isCycling = (bool)1;
+		L_4->___isTransitioning = (bool)1;
 		//<source_info:D:/Unity/unity project/ALP VR/Assets/jagungController.cs:36>
 		WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3* L_5 = (WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3*)il2cpp_codegen_object_new(WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var);
 		WaitForSeconds__ctor_m579F95BADEDBAB4B3A7E302C6EE3995926EF2EFC(L_5, (2.0f), NULL);
@@ -5549,50 +5549,50 @@ IL_003e:
 	{
 		__this->___U3CU3E1__state = (-1);
 		//<source_info:D:/Unity/unity project/ALP VR/Assets/jagungController.cs:39>
-		JagungCycleObjects_t45A23C550C263DA29C597505BE06CD22BB7DC346* L_6 = V_1;
+		JagungGrowthStageController_tB24E17EF1C603B150D59EE6DB3D33417C7A5DAD1* L_6 = V_1;
 		NullCheck(L_6);
-		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_7 = L_6->___objects;
-		JagungCycleObjects_t45A23C550C263DA29C597505BE06CD22BB7DC346* L_8 = V_1;
+		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_7 = L_6->___growthStages;
+		JagungGrowthStageController_tB24E17EF1C603B150D59EE6DB3D33417C7A5DAD1* L_8 = V_1;
 		NullCheck(L_8);
-		int32_t L_9 = L_8->___index;
+		int32_t L_9 = L_8->___currentStageIndex;
 		NullCheck(L_7);
 		int32_t L_10 = L_9;
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_11 = (L_7)->GetAt(static_cast<il2cpp_array_size_t>(L_10));
 		NullCheck(L_11);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_11, (bool)0, NULL);
 		//<source_info:D:/Unity/unity project/ALP VR/Assets/jagungController.cs:42>
-		JagungCycleObjects_t45A23C550C263DA29C597505BE06CD22BB7DC346* L_12 = V_1;
-		JagungCycleObjects_t45A23C550C263DA29C597505BE06CD22BB7DC346* L_13 = V_1;
+		JagungGrowthStageController_tB24E17EF1C603B150D59EE6DB3D33417C7A5DAD1* L_12 = V_1;
+		JagungGrowthStageController_tB24E17EF1C603B150D59EE6DB3D33417C7A5DAD1* L_13 = V_1;
 		NullCheck(L_13);
-		int32_t L_14 = L_13->___index;
-		JagungCycleObjects_t45A23C550C263DA29C597505BE06CD22BB7DC346* L_15 = V_1;
+		int32_t L_14 = L_13->___currentStageIndex;
+		JagungGrowthStageController_tB24E17EF1C603B150D59EE6DB3D33417C7A5DAD1* L_15 = V_1;
 		NullCheck(L_15);
-		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_16 = L_15->___objects;
+		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_16 = L_15->___growthStages;
 		NullCheck(L_16);
 		NullCheck(L_12);
-		L_12->___index = ((int32_t)(((int32_t)il2cpp_codegen_add(L_14, 1))%((int32_t)(((RuntimeArray*)L_16)->max_length))));
+		L_12->___currentStageIndex = ((int32_t)(((int32_t)il2cpp_codegen_add(L_14, 1))%((int32_t)(((RuntimeArray*)L_16)->max_length))));
 		//<source_info:D:/Unity/unity project/ALP VR/Assets/jagungController.cs:45>
-		JagungCycleObjects_t45A23C550C263DA29C597505BE06CD22BB7DC346* L_17 = V_1;
+		JagungGrowthStageController_tB24E17EF1C603B150D59EE6DB3D33417C7A5DAD1* L_17 = V_1;
 		NullCheck(L_17);
-		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_18 = L_17->___objects;
-		JagungCycleObjects_t45A23C550C263DA29C597505BE06CD22BB7DC346* L_19 = V_1;
+		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_18 = L_17->___growthStages;
+		JagungGrowthStageController_tB24E17EF1C603B150D59EE6DB3D33417C7A5DAD1* L_19 = V_1;
 		NullCheck(L_19);
-		int32_t L_20 = L_19->___index;
+		int32_t L_20 = L_19->___currentStageIndex;
 		NullCheck(L_18);
 		int32_t L_21 = L_20;
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_22 = (L_18)->GetAt(static_cast<il2cpp_array_size_t>(L_21));
 		NullCheck(L_22);
 		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_22, (bool)1, NULL);
 		//<source_info:D:/Unity/unity project/ALP VR/Assets/jagungController.cs:47>
-		JagungCycleObjects_t45A23C550C263DA29C597505BE06CD22BB7DC346* L_23 = V_1;
+		JagungGrowthStageController_tB24E17EF1C603B150D59EE6DB3D33417C7A5DAD1* L_23 = V_1;
 		NullCheck(L_23);
-		L_23->___isCycling = (bool)0;
+		L_23->___isTransitioning = (bool)0;
 		//<source_info:D:/Unity/unity project/ALP VR/Assets/jagungController.cs:48>
 		return (bool)0;
 	}
 }
 // Method Definition Index: 95575
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CCycleWithDelayU3Ed__5_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m964C501747DC5C792D5B712F4C9F826072DD7BC9 (U3CCycleWithDelayU3Ed__5_tD185EE5085CD73D48F958C29D3E7993DDB1899AA* __this, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CProgressToNextStageWithDelayU3Ed__5_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mB8E07CF0F1FF8A49108CBFC20F8D52879008AF5B (U3CProgressToNextStageWithDelayU3Ed__5_t30469E4055AE3766F94D69AB4AD51963B4BFA913* __this, const RuntimeMethod* method) 
 {
 	{
 		RuntimeObject* L_0 = __this->___U3CU3E2__current;
@@ -5600,16 +5600,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CCycleWithDelayU3Ed__5_Syste
 	}
 }
 // Method Definition Index: 95576
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CCycleWithDelayU3Ed__5_System_Collections_IEnumerator_Reset_m71A0D3267593BD82BAE50755C67E9D42B850EA67 (U3CCycleWithDelayU3Ed__5_tD185EE5085CD73D48F958C29D3E7993DDB1899AA* __this, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CProgressToNextStageWithDelayU3Ed__5_System_Collections_IEnumerator_Reset_m4779A1FB63B5F8CDBF4E263724CE30B7764846DF (U3CProgressToNextStageWithDelayU3Ed__5_t30469E4055AE3766F94D69AB4AD51963B4BFA913* __this, const RuntimeMethod* method) 
 {
 	{
 		NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* L_0 = (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A_il2cpp_TypeInfo_var)));
 		NotSupportedException__ctor_m1398D0CDE19B36AA3DE9392879738C1EA2439CDF(L_0, NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CCycleWithDelayU3Ed__5_System_Collections_IEnumerator_Reset_m71A0D3267593BD82BAE50755C67E9D42B850EA67_RuntimeMethod_var)));
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CProgressToNextStageWithDelayU3Ed__5_System_Collections_IEnumerator_Reset_m4779A1FB63B5F8CDBF4E263724CE30B7764846DF_RuntimeMethod_var)));
 	}
 }
 // Method Definition Index: 95577
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CCycleWithDelayU3Ed__5_System_Collections_IEnumerator_get_Current_mFCE746A4E2F65D90D5B1BA7528A2B18FB695C641 (U3CCycleWithDelayU3Ed__5_tD185EE5085CD73D48F958C29D3E7993DDB1899AA* __this, const RuntimeMethod* method) 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CProgressToNextStageWithDelayU3Ed__5_System_Collections_IEnumerator_get_Current_mB3769184DB247D68233914F1BE6C0B38157D5A81 (U3CProgressToNextStageWithDelayU3Ed__5_t30469E4055AE3766F94D69AB4AD51963B4BFA913* __this, const RuntimeMethod* method) 
 {
 	{
 		RuntimeObject* L_0 = __this->___U3CU3E2__current;
@@ -6422,7 +6422,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC
 	if (!s_Il2CppMethodInitialized)
 	{
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____5CF5F273518F0EE8527AAE4A59EF3ABFB53F4C70C1356C7FB33E23C1D5C98A21_FieldInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____20829D8A9B29C46ECACDAAA776B1DB8681840339CAFECABD1360AAC04E027524_FieldInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____AE12FB2488A2CD22AD73510F39F7B47E68DA49C0E090A87389EFE5EC0B9F54E1_FieldInfo_var);
 		s_Il2CppMethodInitialized = true;
 	}
@@ -6436,9 +6436,9 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MonoScriptData_t8F50E352855B96FFFC1D9CB07EACC
 		RuntimeHelpers_InitializeArray_m751372AA3F24FBF6DA9B9D687CBFA2DE436CAB9B((RuntimeArray*)L_1, L_2, NULL);
 		(&V_0)->___FilePathsData = L_1;
 		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___FilePathsData), (void*)L_1);
-		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_3 = (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)SZArrayNew(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var, (uint32_t)((int32_t)1592));
+		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_3 = (ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)SZArrayNew(ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var, (uint32_t)((int32_t)1601));
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_4 = L_3;
-		RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 L_5 = { reinterpret_cast<intptr_t> (U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____5CF5F273518F0EE8527AAE4A59EF3ABFB53F4C70C1356C7FB33E23C1D5C98A21_FieldInfo_var) };
+		RuntimeFieldHandle_t6E4C45B6D2EA12FC99185805A7E77527899B25C5 L_5 = { reinterpret_cast<intptr_t> (U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA____20829D8A9B29C46ECACDAAA776B1DB8681840339CAFECABD1360AAC04E027524_FieldInfo_var) };
 		RuntimeHelpers_InitializeArray_m751372AA3F24FBF6DA9B9D687CBFA2DE436CAB9B((RuntimeArray*)L_4, L_5, NULL);
 		(&V_0)->___TypesData = L_4;
 		Il2CppCodeGenWriteBarrier((void**)(&(&V_0)->___TypesData), (void*)L_4);
