@@ -3,45 +3,41 @@ using System.Collections;
 
 public class CycleObjects : MonoBehaviour
 {
-    public GameObject[] objects; // isi 4 object di inspector
+    public GameObject[] objects;
     private int index = 0;
-    private bool isCycling = false; // mencegah spam klik
+    private bool isCycling = false;
 
     void Start()
     {
-        // Matikan semua object dulu
         foreach (GameObject obj in objects)
             obj.SetActive(false);
 
-        // Tampilkan object pertama
         if (objects.Length > 0)
             objects[0].SetActive(true);
     }
 
-    // Fungsi dipanggil ketika tombol ditekan
     public void NextObject()
     {
-        // Cegah tombol ditekan saat masih delay
-        if (!isCycling)
-        {
-            StartCoroutine(CycleWithDelay());
-        }
+        // Jika sedang delay ATAU sudah di object terakhir → stop
+        if (isCycling || index >= objects.Length - 1)
+            return;
+
+        StartCoroutine(CycleWithDelay());
     }
 
     IEnumerator CycleWithDelay()
     {
         isCycling = true;
 
-        // Delay 3 detik
         yield return new WaitForSeconds(2f);
 
-        // Sembunyikan object saat ini
+        // Matikan object sekarang
         objects[index].SetActive(false);
 
-        // Geser ke object berikutnya
-        index = (index + 1) % objects.Length;
+        // Naikkan index (tanpa modulo)
+        index++;
 
-        // Tampilkan object baru
+        // Nyalakan object baru 
         objects[index].SetActive(true);
 
         isCycling = false;

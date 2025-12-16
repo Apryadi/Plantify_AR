@@ -5,12 +5,18 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/halamanAwal.unity
+    guid: f46c78de73588dd42b6c694b3d9e24b2
+  - enabled: 1
+    path: Assets/onBoarding.unity
+    guid: 8852eaa86b526df4a9017ddab20804ed
   - enabled: 1
     path: Assets/Scenes/padi_test1.unity
     guid: 7f27c92498d423449a0b4c3af9ec321c
+  - enabled: 0
+    path: Assets/Scenes/SampleScene.unity
+    guid: 99c9720ab356a0642a771bea13969a05
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

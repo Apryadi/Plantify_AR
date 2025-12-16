@@ -147,6 +147,7 @@
           {
             "name": "Cubemap",
             "scenes": [
+              "Assets/halamanAwal.unity",
               "Assets/Scenes/padi_test1.unity"
             ],
             "dependencyType": 0,
@@ -167,6 +168,7 @@
           {
             "name": "EditorExtension",
             "scenes": [
+              "Assets/halamanAwal.unity",
               "Assets/Scenes/padi_test1.unity"
             ],
             "dependencyType": 1,
@@ -181,6 +183,7 @@
           {
             "name": "GameObject",
             "scenes": [
+              "Assets/halamanAwal.unity",
               "Assets/Scenes/padi_test1.unity"
             ],
             "dependencyType": 0,
@@ -213,6 +216,7 @@
           {
             "name": "LevelGameManager",
             "scenes": [
+              "Assets/halamanAwal.unity",
               "Assets/Scenes/padi_test1.unity"
             ],
             "dependencyType": 1,
@@ -247,6 +251,7 @@
           {
             "name": "LightmapSettings",
             "scenes": [
+              "Assets/halamanAwal.unity",
               "Assets/Scenes/padi_test1.unity"
             ],
             "dependencyType": 0,
@@ -261,6 +266,7 @@
           {
             "name": "Material",
             "scenes": [
+              "Assets/halamanAwal.unity",
               "Assets/Scenes/padi_test1.unity"
             ],
             "dependencyType": 0,
@@ -269,6 +275,7 @@
           {
             "name": "Mesh",
             "scenes": [
+              "Assets/halamanAwal.unity",
               "Assets/Scenes/padi_test1.unity"
             ],
             "dependencyType": 0,
@@ -277,6 +284,7 @@
           {
             "name": "MeshFilter",
             "scenes": [
+              "Assets/halamanAwal.unity",
               "Assets/Scenes/padi_test1.unity"
             ],
             "dependencyType": 0,
@@ -285,6 +293,7 @@
           {
             "name": "MeshRenderer",
             "scenes": [
+              "Assets/halamanAwal.unity",
               "Assets/Scenes/padi_test1.unity"
             ],
             "dependencyType": 0,
@@ -293,6 +302,7 @@
           {
             "name": "MonoBehaviour",
             "scenes": [
+              "Assets/halamanAwal.unity",
               "Assets/Scenes/padi_test1.unity"
             ],
             "dependencyType": 0,
@@ -307,6 +317,7 @@
           {
             "name": "MonoScript",
             "scenes": [
+              "Assets/halamanAwal.unity",
               "Assets/Scenes/padi_test1.unity"
             ],
             "dependencyType": 1,
@@ -315,6 +326,7 @@
           {
             "name": "NamedObject",
             "scenes": [
+              "Assets/halamanAwal.unity",
               "Assets/Scenes/padi_test1.unity"
             ],
             "dependencyType": 1,
@@ -353,6 +365,7 @@
           {
             "name": "RectTransform",
             "scenes": [
+              "Assets/halamanAwal.unity",
               "Assets/Scenes/padi_test1.unity"
             ],
             "dependencyType": 0,
@@ -367,6 +380,7 @@
           {
             "name": "RenderSettings",
             "scenes": [
+              "Assets/halamanAwal.unity",
               "Assets/Scenes/padi_test1.unity"
             ],
             "dependencyType": 0,
@@ -399,6 +413,7 @@
           {
             "name": "Shader",
             "scenes": [
+              "Assets/halamanAwal.unity",
               "Assets/Scenes/padi_test1.unity"
             ],
             "dependencyType": 0,
@@ -425,6 +440,7 @@
           {
             "name": "Sprite",
             "scenes": [
+              "Assets/halamanAwal.unity",
               "Assets/Scenes/padi_test1.unity"
             ],
             "dependencyType": 0,
@@ -902,7 +918,7 @@
           {
             "name": "Collider",
             "scenes": [
-              "Assets/Scenes/padi_test1.unity"
+              "Assets/halamanAwal.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -910,7 +926,7 @@
           {
             "name": "MeshCollider",
             "scenes": [
-              "Assets/Scenes/padi_test1.unity"
+              "Assets/halamanAwal.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -1286,7 +1302,7 @@
           {
             "name": "Font",
             "scenes": [
-              "Assets/Scenes/padi_test1.unity"
+              "Assets/halamanAwal.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -1335,6 +1351,7 @@
           {
             "name": "Canvas",
             "scenes": [
+              "Assets/halamanAwal.unity",
               "Assets/Scenes/padi_test1.unity"
             ],
             "dependencyType": 0,
@@ -1343,7 +1360,7 @@
           {
             "name": "CanvasGroup",
             "scenes": [
-              "Assets/Scenes/padi_test1.unity"
+              "Assets/halamanAwal.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -1351,6 +1368,7 @@
           {
             "name": "CanvasRenderer",
             "scenes": [
+              "Assets/halamanAwal.unity",
               "Assets/Scenes/padi_test1.unity"
             ],
             "dependencyType": 0,
