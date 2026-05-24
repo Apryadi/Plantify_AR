@@ -1,4 +1,7 @@
-# Plantify AR
+
+<div align="center">
+  <img src="Logo.png" alt="Plantify AR Logo" width="400">
+</div>
 
 Plantify AR adalah sebuah aplikasi *Augmented Reality* (AR) yang mensimulasikan siklus pertumbuhan tanaman. Dengan memanfaatkan teknologi AR (berbasis Vuforia), pengguna dapat belajar dan berinteraksi secara langsung dengan berbagai jenis tanaman, seperti Jagung dan Padi, dari tahap bibit hingga panen.
 
